@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>TripBoss</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="container flex">
+				<a href="index.html" class="site-brand"> Trip<span>Master</span> </a>
+
+				<button type="button" id="navbar-show-btn" class="flex">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div id="navbar-collapse">
+					<button type="button" id="navbar-close-btn" class="flex">
+						<i class="fas fa-times"></i>
+					</button>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Úvod</a>
+						</li>
+						<li class="nav-item">
+							<a href="galerie.html" class="nav-link">Galerie</a>
+						</li>
+						<li class="nav-item">
+							<a href="o-nas.html" class="nav-link">O nás</a>
+						</li>
+						<li class="nav-item">
+							<a href="kontakt.html" class="nav-link">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="flex">
+			<div class="container">
+				<div class="header-title">
+					<h1>Objevte svět po svém.</h1>
+					<p>
+						Podívejte se na zajímavá místa, která vás ohromí na první
+						pohled!Dovolená co za to stojí.
+					</p>
+				</div>
+				<div class="header-form">
+					<h2>Vyberte místo své cesty:</h2>
+					<form class="flex">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Název destinace"
+						/>
+						<input type="date" class="form-control" placeholder="Date" />
+						<input
+							type="number"
+							class="form-control"
+							placeholder="Cena (CZK)"
+						/>
+						<input type="submit" class="btn" value="Vyhledat" />
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<section id="featured" class="py-4">
+			<div class="container">
+				<div class="title-wrap">
+					<span class="sm-title"
+						>prozkoumejte destinace ještě před tím než je navštívíte.</span
+					>
+					<h2 class="lg-title">populární destinace</h2>
+				</div>
+
+				<div class="featured-row">
+					<div class="featured-item my-2 shadow">
+						<img
+							src="images/featured-reo-de-janeiro-brazil.jpg"
+							alt="featured place"
+						/>
+						<div class="featured-item-content">
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+								Rio de Janeiro, Brazílie
+							</span>
+							<div>
+								<p class="text">
+									Brazilské město ve stejnojmenném <br />spolkovém státu na
+									jihovýchodním <br />pobřeží země.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-item my-2 shadow">
+						<img
+							src="images/featured-north-bondi-australia.jpg"
+							alt="featured place"
+						/>
+						<div class="featured-item-content">
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+								North Bondi, Austrálie
+							</span>
+							<div>
+								<p class="text">
+									Pobřežní východní předměstí Sydney ve státě Nový Jižní Wales
+									vAustrálii.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-item my-2 shadow">
+						<img
+							src="images/featured-berlin-germany.jpg"
+							alt="featured place"
+						/>
+						<div class="featured-item-content">
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+								Berlín, Německo
+							</span>
+							<div>
+								<p class="text">
+									Je hlavní a největší město Německa <br />a zároveň i spolková
+									země <br />Spolkové republiky Německo.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-item my-2 shadow">
+						<img
+							src="images/featured-khwaeng-wat-arun-thailand.jpg"
+							alt="featured place"
+						/>
+						<div class="featured-item-content">
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+								Khwaeng wat arun, Thajsko
+							</span>
+							<div>
+								<p class="text">
+									Buddhistický chrám ve čtvrti Bangkok Yai v Bangkoku v Thajsku.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-item my-2 shadow">
+						<img src="images/featured-rome-italy.jpg" alt="featured place" />
+						<div class="featured-item-content">
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+								Řím, Itálie
+							</span>
+							<div>
+								<p class="text">
+									Řím je hlavní město Itálie, oblasti Lazio a provincie Roma.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-item my-2 shadow">
+						<img
+							src="images/featured-fuvahmulah-maldives.jpg"
+							alt="featured place"
+						/>
+						<div class="featured-item-content">
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+								Fuvahmulah, Maledivy
+							</span>
+							<div>
+								<p class="text">
+									Fuvammulah je jediný ostrov na nádherném Gnavijani
+									naMaldivách.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="py-4">
+			<div class="container">
+				<div class="title-wrap">
+					<span class="sm-title">zjistěte všechny výhody.</span>
+					<h2 class="lg-title">VÝHODY</h2>
+				</div>
+
+				<div class="services-row">
+					<div class="services-item">
+						<span class="services-icon">
+							<i class="fas fa-hotel"></i>
+						</span>
+						<h3>Ověřené hotely</h3>
+						<p class="text">
+							Všechny hotely, které nabízíme našim zákazníkům jsou ověřené avždy
+							jsou v nich česky mluvící delegáti.
+						</p>
+						<a href="#" class="btn">Více</a>
+					</div>
+
+					<div class="services-item">
+						<span class="services-icon">
+							<i class="fas fa-map-marked-alt"></i>
+						</span>
+						<h3>Tipy na cesty</h3>
+						<p class="text">
+							Všichni delegáti ve všech zemích vám poradí zajímavá lokální
+							místana výlety.
+						</p>
+						<a href="#" class="btn">Read more</a>
+					</div>
+
+					<div class="services-item">
+						<span class="services-icon">
+							<i class="fas fa-money-bill"></i>
+						</span>
+						<h3>Příjemné ceny</h3>
+						<p class="text">
+							Všechny ceny jsou sražené aby byly co nejpřijatelnejší a cestu
+							simohl dovolit opravdu každý.
+						</p>
+						<a href="#" class="btn">Více</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials" class="py-4">
+			<div class="container">
+				<div class="title-wrap">
+					<span class="sm-title">co o nás říkají klienti</span>
+					<h2 class="lg-title">recenze</h2>
+				</div>
+
+				<div class="test-row">
+					<div class="test-item">
+						<p class="text">
+							Velmi pěkný, čistý městský hotel s dobrou polohou pro
+							podnikánívýletů po Riu. Samotný zájezd byl perfektní, delegát
+							příjemný avždy nám vysvětlil co jsme potřebovali. Neskutečný
+							zážitek!
+						</p>
+						<div class="test-item-info">
+							<img src="images/test-1.jpg" alt="testimonial" />
+							<div>
+								<h3>Milan Beránek</h3>
+								<p class="text">Zájezd, Brazílie</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="test-item">
+						<p class="text">
+							Písečná pláž je pouhých 100 metrů od hotelu. Pláž je čistá,
+							bezodpadků a už od brzkých ranních hodin je možné v moři
+							spatřitsurfaře. Ráno je moře méně rozbouřené, nejsou tak velké
+							vlny jakoodpoledne, takže se dá v moři lépe zaplavat než v
+							odpoledníchhodinách. U pláže jsou stánky s občerstvením, pár
+							obchůdků sesuvenýry, jinak se po pláži pohybují místní, kteří
+							nabízejí botydo vody, šátky, ručníky, sluneční brýle apod.
+						</p>
+						<div class="test-item-info">
+							<img src="images/test-2.jpg" alt="testimonial" />
+							<div>
+								<h3>Patrik Šilhánek</h3>
+								<p class="text">Zájezd, Maledivy</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="test-item">
+						<p class="text">
+							Thajsko je prostě úžasné ať už lidmi co zde žijí nebo
+							prostředím.Pro mě byl zájezd malinko znepříjemněn kvůli mé váze
+							ale jinaksuper.
+						</p>
+						<div class="test-item-info">
+							<img src="images/test-3.jpg" alt="testimonial" />
+							<div>
+								<h3>Eliška Martinová</h3>
+								<p class="text">Zájezd, Thajsko</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="video">
+			<div class="video-wrapper flex">
+				<video loop>
+					<source src="videos/video-section.mp4" type="video/mp4" />
+				</video>
+				<button type="button" id="play-btn">
+					<i class="fas fa-play"></i>
+				</button>
+			</div>
+		</section>
+
+		<footer class="py-4">
+			<div class="container footer-row">
+				<div class="footer-item">
+					<a href="index.html" class="site-brand"> Trip<span>Master</span> </a>
+					<p class="text">
+						Objevte svět po svém. Podívejte se na zajímavá místa, která
+						vásohromí na první pohled! Dovolená co za to stojí.
+					</p>
+				</div>
+				<div class="footer-item">
+					<h2>Sledujte nás:</h2>
+					<ul class="social-links">
+						<li>
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-pinterest"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-google-plus"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item">
+					<h2>Populární zájezdy:</h2>
+					<ul>
+						<li><a href="#">Thajsko</a></li>
+						<li><a href="#">Austrálie</a></li>
+						<li><a href="#">Maledivy</a></li>
+						<li><a href="#">Švýcarsko</a></li>
+						<li><a href="#">Německo</a></li>
+					</ul>
+				</div>
+				<div class="subscribe-form footer-item">
+					<h2>Přihlašte se k newsletteru!</h2>
+					<form class="flex">
+						<inputtype
+							="email"
+							placeholder="Zadejte e-mail"
+							class="form-control"
+						/><input type="submit" class="btn" value="Subscribe" />
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+		<script>
+			let video = document.querySelector('.video-wrapper video');
+			document.getElementById('play-btn').addEventListener('click', () => {
+				if (video.paused) {
+					video.play();
+				} else {
+					video.pause();
+				}
+			});
+		</script>
+	</body>
+</html>

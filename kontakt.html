@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>TripBoss</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="container flex">
+				<a href="index.html" class="site-brand"> Trip<span>Master</span> </a>
+
+				<button type="button" id="navbar-show-btn" class="flex">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div id="navbar-collapse">
+					<button type="button" id="navbar-close-btn" class="flex">
+						<i class="fas fa-times"></i>
+					</button>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Úvod</a>
+						</li>
+						<li class="nav-item">
+							<a href="galerie.html" class="nav-link">Galerie</a>
+						</li>
+						<li class="nav-item">
+							<a href="o-nas.html" class="nav-link">O nás</a>
+						</li>
+						<li class="nav-item">
+							<a href="kontakt.html" class="nav-link">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="flex header-sm">
+			<div class="container">
+				<div class="header-title">
+					<h1>Kontakt</h1>
+				</div>
+			</div>
+		</header>
+
+		<section id="contact" class="py-4">
+			<div class="container">
+				<div class="title-wrap">
+					<span class="sm-title">Spojte se s námi</span>
+					<h2 class="lg-title">KONTAKTUJTE NÁS</h2>
+				</div>
+
+				<div class="contact-row">
+					<div class="contact-left">
+						<form class="contact-form">
+							<input type="text" class="form-control" placeholder="Jméno" />
+							<input type="email" class="form-control" placeholder="E-mail" />
+							<textarea
+								rows="4"
+								class="form-control"
+								placeholder="Zpráva"
+								style="resize: none"
+							></textarea>
+							<input type="submit" class="btn" value="Odeslat" />
+						</form>
+					</div>
+					<div class="contact-right my-2">
+						<div class="contact-item">
+							<span class="contact-icon flex">
+								<i class="fa fa-phone-alt"></i>
+							</span>
+							<div>
+								<span>Telefon</span>
+								<p class="text">+420 701 666 789</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<span class="contact-icon flex">
+								<i class="fa fa-map-marked-alt"></i>
+							</span>
+							<div>
+								<span>Adresa</span>
+								<p class="text">Varhulíkové 1582/24, Holešovice</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<span class="contact-icon flex">
+								<i class="fa fa-envelope"></i>
+							</span>
+							<div>
+								<span>E-mail</span>
+								<p class="text">info@tripmaster.cz</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="py-4">
+			<div class="container footer-row">
+				<div class="footer-item">
+					<a href="index.html" class="site-brand"> Trip<span>Master</span> </a>
+					<p class="text">
+						Objevte svět po svém. Podívejte se na zajímavá místa, která vás
+						ohromí na první pohled! Dovolená co za to stojí.
+					</p>
+				</div>
+
+				<div class="footer-item">
+					<h2>Sledujte nás:</h2>
+					<ul class="social-links">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-pinterest"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-google-plus"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-item">
+					<h2>Populární zájezdy:</h2>
+					<ul>
+						<li><a href="#">Thajsko</a></li>
+						<li><a href="#">Austrálie</a></li>
+						<li><a href="#">Maledivy</a></li>
+						<li><a href="#">Švýcarsko</a></li>
+						<li><a href="#">Německo</a></li>
+					</ul>
+				</div>
+
+				<div class="subscribe-form footer-item">
+					<h2>Přihlašte se k newsletteru!</h2>
+					<form class="flex">
+						<input
+							type="email"
+							placeholder="Zadejte e-mail"
+							class="form-control"
+						/>
+						<input type="submit" class="btn" value="Subscribe" />
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+		<script></script>
+	</body>
+</html>
